@@ -11,9 +11,14 @@ JENKINS_PLUGINS=(
     "credentials/2.1.4"
     "email-ext/2.47"
     "git/2.5.3"
-    "git-client/1.21.0"
+    "git-client/1.19.6"
     "greenballs/1.15"
     "job-dsl/1.50"
+    "scm-api/1.0"
+    "structs/1.3"
+    "token-macro/1.12.1"
+    "workflow-scm-step/1.14.2"
+    "workflow-step-api/1.14.2"
 )
 
 JENKINS_WAR_MIRROR="http://mirrors.jenkins-ci.org/war-stable"
@@ -45,7 +50,7 @@ done
 # Jenkins config files
 PORT=${PORT-"8080"}
 
-mkdir logs
+mkdir -p logs
 
 # Start the master
 export JENKINS_HOME="$(pwd)"
