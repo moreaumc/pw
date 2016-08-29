@@ -15,3 +15,7 @@ Distributed CI: Scaling Jenkins on Mesos and Marathon https://www.youtube.com/wa
 https://docs.snap-ci.com/pipeline/
 
 https://github.com/Diabol/gocd-pipeline-configurator
+
+# Development
+
+https://kotlinlang.org/docs/reference/type-safe-builders.html
