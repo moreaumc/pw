@@ -13,5 +13,5 @@ Initial goal will be to support Jenkins 1.6.x and Jenkins 2.0 CI servers.
 
 Use gradle 3.0 scripted by Kotlin
 Write DSL in Kotlin using Type-Safe Builders https://kotlinlang.org/docs/reference/type-safe-builders.html
-JUnit
+JUnit v4.11
 
