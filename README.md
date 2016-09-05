@@ -4,6 +4,7 @@ of the CI/CD pipeline domain without exposing too many internals about the actua
 Initial goal will be to support Jenkins 1.6.x and Jenkins 2.0 CI servers.
 
 ###Design ideas:
+- Support collaboration between the application developers and the tool team
 - Convention over configuration
 - Code generator
 - Fully pluggable
@@ -13,5 +14,5 @@ Initial goal will be to support Jenkins 1.6.x and Jenkins 2.0 CI servers.
 
 Use gradle 3.0 scripted by Kotlin
 Write DSL in Kotlin using Type-Safe Builders https://kotlinlang.org/docs/reference/type-safe-builders.html
-JUnit v4.11
+JUnit
 
