@@ -1,3 +1,18 @@
+# What is a Continuous Delivery Pipeline?
+
+https://highops.com/insights/continuous-delivery-pipelines-gocd-vs-jenkins/
+
+http://martinfowler.com/bliki/DeploymentPipeline.html
+
+# Open-source CI Servers and their Pipeline Definition Languages
+
+## Jenkins
+
+## Concource
+
+## GoCD
+
+
 # YouTube
 
 Adoption of the Job DSL Plugin at Netflix - https://www.youtube.com/watch?v=FeSKrBvT72c
