@@ -8,9 +8,8 @@ http://martinfowler.com/bliki/DeploymentPipeline.html
 
 ## Jenkins
 
-JobDSL https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin
-
-Jenkins 2.0 Pipelines https://wiki.jenkins-ci.org/display/JENKINS/2.0+Pipeline+as+Code
+ - JobDSL https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin
+ - Jenkins 2.0 Pipelines https://wiki.jenkins-ci.org/display/JENKINS/2.0+Pipeline+as+Code
 
 ## Concource
 
