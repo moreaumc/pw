@@ -4,6 +4,8 @@ https://highops.com/insights/continuous-delivery-pipelines-gocd-vs-jenkins/
 
 http://martinfowler.com/bliki/DeploymentPipeline.html
 
+Continuous Delivery: Anatomy of the Deployment Pipeline - http://www.informit.com/articles/article.aspx?p=1621865
+
 # Open-source CI Servers and their Pipeline Definition Languages
 
 ## Jenkins

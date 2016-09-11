@@ -7,7 +7,7 @@ import org.junit.Test
 fun basicParse() {
     val pl = pipeline("test-pipeline")  {
         stage("build") {
-            job("build and test") {
+            job("maven") {
                 maven("testbed/SampleJavaService") {}
             }
         }
@@ -18,6 +18,6 @@ fun basicParse() {
     assertEquals("build", stage.name)
 
     val job = stage.jobByName("build and test")
-    assertEquals("build and test", job.name)
+    assertEquals("maven", job.name)
 
 }
