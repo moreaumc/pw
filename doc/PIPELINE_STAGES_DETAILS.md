@@ -3,7 +3,7 @@ patterns and anti-patterns for effective software engineering.
 
 ### Stage: Build
 
-The build stage is tipically triggered by a 'merge to trunk/master branch' event. It starts bycloning the source code repository
+The build stage is typically triggered by a 'merge to trunk/master branch' event. It starts by cloning the source code repository
  (Git terminology). Next is one or more compilation steps (various code/doc generation) followed by the execution of the unit test suite.
 The last job/step in this stage is typically to upload the tested artifact to an artifact store such as
 Nexus, Artifactory, Docker registry, etc.
