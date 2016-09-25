@@ -1,7 +1,8 @@
 package pw.ast
 
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.Test
+import pw.step.maven
 
 class PipelineAstTest {
     @Test
@@ -23,7 +24,7 @@ class PipelineAstTest {
         val buildStage = pl.stageByName("build")
         assertEquals("build", buildStage.name)
 
-        val job = buildStage.jobByName("build-and-unit-test")
+        val job = buildStage.findJobByName("build-and-unit-test")
         assertEquals("build-and-unit-test", job.name)
 
         val deployStage = pl.stageByName("deploy")

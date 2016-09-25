@@ -1,12 +1,15 @@
 package pw.ast
 
+
+/*
+The design is based on GoCD model
+ */
+
 fun pipeline(name : String, init: Pipeline.() -> Unit): Pipeline {
     val pl = Pipeline(name)
     pl.init()
     return pl
 }
-
-
 
 class Pipeline(val name: String) : CompositeAstNode() {
 
@@ -25,7 +28,7 @@ class Pipeline(val name: String) : CompositeAstNode() {
 class Stage(val name : String) : CompositeAstNode() {
     fun job(name: String, init: Job.() -> Unit) = initNode(Job(name), init)
 
-    fun jobByName(name: String) : Job {
+    fun findJobByName(name: String) : Job {
         return children.filter { it is Job && it.name == name}[0] as Job
     }
 
@@ -36,8 +39,6 @@ class Stage(val name : String) : CompositeAstNode() {
 
 class Job(val name : String) : CompositeAstNode() {
 
-    fun maven(target: String, init: Maven.() -> Unit) = initNode(Maven(target), init)
-
     override fun toString(): String{
         return "Job(name='$name')"
     }
@@ -45,8 +46,6 @@ class Job(val name : String) : CompositeAstNode() {
 }
 
 abstract class Step() : AstNode()
-
-class Maven(val target : String?) : Step()
 
 abstract class AstNode() {}
 
