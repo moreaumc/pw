@@ -11,13 +11,21 @@ fun basicParse() {
                 maven("testbed/SampleJavaService") {}
             }
         }
+        stage("deploy") {
+            job("maven") {
+                maven("testbed/SampleJavaService") {}
+            }
+        }
     }
     assertEquals("test-pipeline", pl.name)
 
-    val stage = pl.stageByName("build")
-    assertEquals("build", stage.name)
+    val buildStage = pl.stageByName("build")
+    assertEquals("build", buildStage.name)
 
-    val job = stage.jobByName("build and test")
+    val job = buildStage.jobByName("build and test")
     assertEquals("maven", job.name)
+
+    val deployStage = pl.stageByName("deploy")
+    assertEquals("deploy", deployStage.name)
 
 }

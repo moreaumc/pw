@@ -3,7 +3,7 @@ effectively capture the essence of the CI/CD pipeline domain and suport multiple
 
 The PDL design is inspired by GoCD, https://docs.go.cd/current/introduction/concepts_in_go.html
 
-Initial goal will be to support Jenkins 1.6.x and Jenkins 2.0 CI servers.
+Initial goal will be to support Jenkins 1.6.x and Jenkins 2.0 CI servers. Stretch goal is to support Concourse CI.
 
 ###Design ideas:
 - Support collaboration between the application developers and the tool team

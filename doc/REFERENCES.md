@@ -1,5 +1,7 @@
 # What is a Continuous Delivery Pipeline?
 
+Get Mapped: Using Value Stream Mapping to Create a DevOps Adoption Roadmap - http://www.slideshare.net/Urbancode/get-mapped-using-value-stream-mapping-to-create-a-devops-adoption-roadmap
+
 https://highops.com/insights/continuous-delivery-pipelines-gocd-vs-jenkins/
 
 http://martinfowler.com/bliki/DeploymentPipeline.html
@@ -39,6 +41,9 @@ Distributed CI: Scaling Jenkins on Mesos and Marathon https://www.youtube.com/wa
 https://docs.snap-ci.com/pipeline/
 
 https://github.com/Diabol/gocd-pipeline-configurator
+
+
+TeamCity DSL: https://www.youtube.com/watch?v=ehTL4DiHguo Git: https://github.com/jonnyzzz/TeamCity2DSL
 
 # Development
 

@@ -16,7 +16,7 @@ class Pipeline(val name: String) : CompositeAstNode() {
         return children.filter { it is Stage && it.name == name}[0] as Stage
     }
 
-    override fun toString(): String{
+    override fun toString(): String {
         return "Pipeline(name='$name')"
     }
 
